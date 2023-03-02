@@ -1,2 +1,2 @@
-. .profile
-. .bashrc
+source .profile
+source .bashrc
