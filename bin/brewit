@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if ! which brew 1>/dev/null; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    eval "$(/usr/local/bin/brew shellenv)"
+    brew analytics off
+fi
+
+brew tap homebrew/cask-fonts
+
+brew install \
+    bash \
+    coreutils \
+    font-hack-nerd-font \
+    git \
+    jq \
+    starship

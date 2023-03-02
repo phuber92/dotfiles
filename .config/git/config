@@ -1,0 +1,9 @@
+[user]
+    name = Patrick Huber
+    email = 44550823+phuber92@users.noreply.github.com
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false
