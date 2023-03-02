@@ -13,5 +13,6 @@ brew install \
     coreutils \
     font-hack-nerd-font \
     git \
+    go \
     jq \
     starship
