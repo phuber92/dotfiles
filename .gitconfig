@@ -1,0 +1,19 @@
+[commit]
+  gpgsign = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  allowedSignersFile = /var/home/pato/.ssh/allowed_signers
+
+[merge]
+  rebase = false
+
+[push]
+  autoSetupRemote = true
+
+[user]
+  name = Patrick Huber
+  email = 44550823+phuber92@users.noreply.github.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDbHs+cfLMu7+VOw/S8MloYTfR6NJRnaRx5Lb/caQloB

@@ -1,0 +1,8 @@
+{
+  "lastChangelogVersion": "0.80.6",
+  "defaultProvider": "openrouter",
+  "defaultModel": "z-ai/glm-5.2",
+  "defaultThinkingLevel": "medium",
+  "theme": "tokyonight-moon",
+  "enableInstallTelemetry": false
+}

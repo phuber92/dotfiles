@@ -1,0 +1,9 @@
+bell-features = no-title
+cursor-style = block
+cursor-style-blink = false
+font-family = Hack Nerd Font
+shell-integration = bash
+shell-integration-features = no-cursor
+theme = TokyoNight Moon
+window-height = 30
+window-width = 110
