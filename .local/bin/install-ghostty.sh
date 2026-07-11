@@ -21,4 +21,4 @@ log "Building build-ghostty image"
 podman build -t $CONTAINERNAME "$(dirname "$CONTAINERFILE")"
 
 log "Installing ghostty"
-podman run --rm localhost/$CONTAINERNAME
+podman run -d --rm localhost/$CONTAINERNAME
