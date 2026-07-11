@@ -33,7 +33,6 @@ export HISTCONTROL=ignoreboth:erasedups
 export SSH_AUTH_SOCK=$HOME/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock
 
 # Aliases
-alias dev="toolbox enter dev"
 alias ll="ls -lah"
 alias pie="pi --no-session"
 alias venv="source .venv/bin/activate"
