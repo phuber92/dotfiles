@@ -20,42 +20,6 @@ return {
   },
 
   {
-    -- Debugging
-    "mfussenegger/nvim-dap",
-    opts = function()
-      local dap = require("dap")
-
-      dap.adapters.codelldb = {
-        type = "server",
-        port = "${port}",
-        executable = {
-          command = vim.fn.stdpath("data") .. "/mason/bin/codelldb",
-          args = { "--port", "${port}" },
-        },
-      }
-
-      dap.configurations.odin = {
-        {
-          name = "Debug Odin program",
-          type = "codelldb",
-          request = "launch",
-          program = function()
-            local build_dir = vim.fn.getcwd() .. "/build"
-            local build = build_dir .. "/debug"
-
-            vim.fn.mkdir(build_dir, "p")
-            vim.fn.system({ "odin", "build", "src", "-debug", "-out:" .. build })
-
-            return build
-          end,
-          cwd = "${workspaceFolder}",
-          stopOnEntry = false,
-        },
-      }
-    end,
-  },
-
-  {
     -- Formatting
     "stevearc/conform.nvim",
     opts = {
@@ -89,7 +53,6 @@ return {
         },
         jsonls = {},
         lua_ls = {},
-        ols = {},
         pyright = {},
         taplo = {},
         yamlls = {
@@ -119,7 +82,6 @@ return {
         "gdscript-formatter",
         "json-lsp",
         "lua-language-server",
-        "ols",
         "pyright",
         "ruff",
         "shellcheck",
