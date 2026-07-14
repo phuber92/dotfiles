@@ -4,5 +4,6 @@
   "defaultModel": "z-ai/glm-5.2",
   "defaultThinkingLevel": "medium",
   "theme": "tokyonight-moon",
-  "enableInstallTelemetry": false
+  "enableInstallTelemetry": false,
+  "hideThinkingBlock": true
 }
