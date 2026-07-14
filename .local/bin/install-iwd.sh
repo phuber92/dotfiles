@@ -17,5 +17,6 @@ EOF
 log "Fixing selinux labels"
 sudo restorecon -R /etc/NetworkManager
 
-log "Enabling iwd service"
-sudo systemctl enable iwd
+log "Post reboot run:"
+echo "sudo systemctl enable iwd"
+echo "sudo systemctl start iwd"
