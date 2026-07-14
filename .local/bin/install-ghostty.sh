@@ -16,10 +16,24 @@ ZIG_MINISIGN_PUB_KEY="RWSGOq2NVecA2UPNdBUZykf1CCb147pkmdtYxgb3Ti+JO/wCYvhbAb/U"
 MINISIGN_BIN="$BUILD_DIR/minisign-linux/x86_64/minisign"
 ZIG_BIN="$BUILD_DIR/zig-x86_64-linux-$ZIG_VERSION/zig"
 
-if [ ! -f "/run/.toolboxenv" ]; then
+if [ ! -f /run/.toolboxenv ]; then
   log "ERROR: not in toolbox container"
   exit 1
 fi
+
+if ! rpm -q gtk4-layer-shell; then
+  log "ERROR: gtk4-layer-shell not installed"
+  exit 1
+fi
+
+sudo dnf install -y \
+  curl \
+  gettext \
+  gtk4-devel \
+  gtk4-layer-shell-devel \
+  libadwaita-devel \
+  tar &&
+  dnf clean all
 
 cd "$BUILD_DIR"
 
