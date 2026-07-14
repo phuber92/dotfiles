@@ -4,6 +4,7 @@
 if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
 fi
+export HOMEBREW_BUNDLE_DUMP_NO_FLATPAK=true
 
 # Starship prompt
 if command -v starship >/dev/null 2>&1; then
