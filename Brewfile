@@ -1,5 +1,7 @@
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# GitHub command-line tool
+brew "gh"
 # Improved top (interactive process viewer)
 brew "htop"
 # Simple terminal UI for git commands
