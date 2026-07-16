@@ -33,6 +33,11 @@ export HISTCONTROL=ignoreboth:erasedups
 # Configure bitwarden ssh agent
 export SSH_AUTH_SOCK=$HOME/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock
 
+if [ -f "$HOME/.env" ]; then
+  # shellcheck disable=SC1091
+  source "$HOME/.env"
+fi
+
 # Aliases
 alias ll="ls -lah"
 alias venv="source .venv/bin/activate"
