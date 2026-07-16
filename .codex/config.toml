@@ -1,5 +1,5 @@
 model_provider = "openrouter"
-model = "z-ai/glm-5.2"
+model = "openai/gpt-5.6-sol"
 
 [model_providers.openrouter]
 name = "openrouter"
@@ -32,4 +32,5 @@ status_line_use_colors = true
 theme = "tokyonight-moon"
 
 [tui.model_availability_nux]
-"gpt-5.6-sol" = 2
+"gpt-5.5" = 2
+"gpt-5.6-sol" = 4
