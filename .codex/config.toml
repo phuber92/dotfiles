@@ -29,6 +29,7 @@ status_line = [
   "total-output-tokens",
 ]
 status_line_use_colors = true
+theme = "tokyonight-moon"
 
 [tui.model_availability_nux]
 "gpt-5.6-sol" = 2
