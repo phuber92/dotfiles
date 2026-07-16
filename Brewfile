@@ -17,4 +17,3 @@ brew "tree-sitter-cli"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 cask "font-hack-nerd-font"
-npm "@earendil-works/pi-coding-agent"

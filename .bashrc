@@ -35,5 +35,4 @@ export SSH_AUTH_SOCK=$HOME/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-ag
 
 # Aliases
 alias ll="ls -lah"
-alias pie="pi --no-session"
 alias venv="source .venv/bin/activate"
