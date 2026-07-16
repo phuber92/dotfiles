@@ -1,13 +1,3 @@
-local home = vim.fs.normalize((vim.uv or vim.loop).os_homedir() or vim.fn.expand("~"))
-
-local home_picker_exclude = {
-  ".cache/**",
-  ".npm/**",
-  ".pi/agent/sessions/**",
-  ".var/**",
-  "git/**",
-}
-
 return {
   {
     -- Completions
@@ -99,11 +89,6 @@ return {
     "folke/snacks.nvim",
     opts = {
       picker = {
-        config = function(opts)
-          if opts.cwd == home then
-            opts.exclude = home_picker_exclude
-          end
-        end,
         sources = {
           explorer = {
             hidden = true,
@@ -111,17 +96,9 @@ return {
           },
           files = {
             hidden = true,
-            ignored = true,
           },
           grep = {
             hidden = true,
-            ignored = true,
-          },
-          projects = {
-            dev = { "~/git" },
-            projects = { home },
-            patterns = { ".git" },
-            recent = false,
           },
         },
       },
