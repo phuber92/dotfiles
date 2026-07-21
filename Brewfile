@@ -2,6 +2,8 @@
 brew "fd"
 # GitHub command-line tool
 brew "gh"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Improved top (interactive process viewer)
 brew "htop"
 # Simple terminal UI for git commands
