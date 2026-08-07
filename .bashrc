@@ -1,10 +1,9 @@
 # shellcheck shell=bash
 
 # Homebrew
-if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
+if [ -f /opt/homebrew/bin/brew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv bash)"
 fi
-export HOMEBREW_BUNDLE_DUMP_NO_FLATPAK=true
 
 # Starship prompt
 if command -v starship >/dev/null 2>&1; then
@@ -31,7 +30,7 @@ export VISUAL="nvim"
 export HISTCONTROL=ignoreboth:erasedups
 
 # Configure bitwarden ssh agent
-export SSH_AUTH_SOCK=$HOME/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock
+export SSH_AUTH_SOCK=$HOME/.bitwarden-ssh-agent.sock
 
 if [ -f "$HOME/.env" ]; then
   # shellcheck disable=SC1091

@@ -1,9 +1,15 @@
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# Distributed revision control system
+brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
 # Improved top (interactive process viewer)
@@ -23,3 +29,5 @@ brew "uv"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 cask "font-hack-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
