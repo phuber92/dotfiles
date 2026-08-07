@@ -12,6 +12,8 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Agent multiplexer that lives in your terminal
+brew "herdr"
 # Improved top (interactive process viewer)
 brew "htop"
 # Tools and libraries to manipulate images in select formats
