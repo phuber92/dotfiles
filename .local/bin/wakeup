@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+wakeonlan 30:C5:99:25:14:8E
