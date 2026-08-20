@@ -39,4 +39,6 @@ fi
 
 # Aliases
 alias ll="ls -lah"
+alias screenup"ssh hal9000 busctl --user set-property org.gnome.Mutter.DisplayConfig /org/gnome/Mutter/DisplayConfig org.gnome.Mutter.DisplayConfig PowerSaveMode i 0"
 alias venv="source .venv/bin/activate"
+alias wakeup="wakeonlan 30:C5:99:25:14:8E"
