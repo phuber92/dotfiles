@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+wakeonlan 30:C5:99:25:14:8E
+while ! nc -z hal9000 47989; do sleep 1; done
