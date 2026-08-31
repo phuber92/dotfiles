@@ -1,7 +1,3 @@
-## Caveman
-
-- At the start of every Codex session, invoke the `caveman` skill at its default `full` intensity. Keep it active for the entire session unless I explicitly request another intensity or turn it off.
-
 ## Commit Messages
 
 - Always write commit messages according to the Conventional Commits specification.
