@@ -2,5 +2,19 @@
 
 set -e
 
-wakeonlan 30:C5:99:25:14:8E
+ssh pi wakeonlan 30:C5:99:25:14:8E
 while ! nc -z hal9000 47989; do sleep 1; done
+ssh hal9000 '
+  while [ "$(busctl --user get-property \
+    org.gnome.Mutter.DisplayConfig \
+    /org/gnome/Mutter/DisplayConfig \
+    org.gnome.Mutter.DisplayConfig \
+    PowerSaveMode)" != "i 0" ]; do
+    busctl --user set-property \
+      org.gnome.Mutter.DisplayConfig \
+      /org/gnome/Mutter/DisplayConfig \
+      org.gnome.Mutter.DisplayConfig \
+      PowerSaveMode i 0
+    sleep 1
+  done
+'
