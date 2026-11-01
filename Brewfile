@@ -2,6 +2,8 @@
 brew "bash"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Command-line fuzzy finder written in Go
@@ -36,6 +38,8 @@ brew "starship"
 brew "tree-sitter-cli"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Sends magic packets to wake up network-devices
+brew "wakeonlan"
 # Internet file retriever
 brew "wget"
 # OpenAI's coding agent that runs in your terminal
