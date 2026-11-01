@@ -2,3 +2,5 @@ git:
   autoFetch: false
   diffRenderers:
     - command: delta --dark --paging=never
+gui:
+  nerdFontsVersion: "3"
