@@ -1,2 +1,5 @@
 [cmd_duration]
 disabled = true
+
+[hostname]
+ssh_only = false
