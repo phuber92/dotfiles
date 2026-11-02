@@ -14,7 +14,7 @@ hooks = true
 trusted_hash = "sha256:953e23124a82440fafbe7706c0215068ae89898d622ec5a25594007b9011188d"
 
 [hooks.state."/Users/pato/.codex/hooks.json:session_start:1:0"]
-trusted_hash = "sha256:7ac16f27c7b29bec5952047d0a2193dc7595d731faca5a12c3c476194bd2d532"
+trusted_hash = "sha256:3da181f6a6d78fa2e4446bb51881bea0b4d69562eb909961fa616df84970d643"
 
 [mcp_servers.superlogical]
 url = "https://www.superlogical.com/rex/community-mcp"
