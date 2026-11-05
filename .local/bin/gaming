@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-set -e
 wakeonlan 30:C5:99:25:14:8E
